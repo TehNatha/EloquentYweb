@@ -312,16 +312,6 @@ For each chapter...
 5. As you complete the exercises, save your work and refresh `spec.html` to watch your tests start passing!
 
     1. If you're having trouble figuring out what the tests want, open `spec.js` in a text editor and take a look. (Do not edit the tests&mdash;that is super cheating and we will notice.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
+This is the world at your fingers.
 
-## Sign your name here
-BOSS 
->>>>>>> added name
-=======
-
-# This Fork Belongs To...
-Elizabeth
->>>>>>> Add Name
