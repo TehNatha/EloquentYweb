@@ -261,7 +261,7 @@ Exercises.compare4 = function () {
 // Correct the comparison operators to return false.
 Exercises.compare5 = function () {
 
-  return isNaN(NaN) ;
+  return isNaN(NaN) !== isNaN(NaN) ;
   
 };
 
