@@ -15,4 +15,5 @@ Fizz.buzz = function () {
         
         console.log(i);
     };
+
 };
