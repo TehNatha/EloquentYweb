@@ -5,7 +5,7 @@
 // evaluated value is not undefined.
 Exer.expressions1 = function () {
 
-  return /* your answer here */ ;
+  return /* your answer here */ ("got it");
 
 };
 
@@ -13,7 +13,8 @@ Exer.expressions1 = function () {
 Exer.statements1 = function () {
 
   // Write a statement that is not undefined.
-
+  v
+  
 };
 
 /*-----------------------------    VARIABLES    ------------------------------*/
@@ -22,44 +23,47 @@ Exer.statements1 = function () {
 Exer.variables1 = function () {
 
   // Write a statement that declares a variable.
-
+var x;
   // Return that variable.
-
+return x;
 };
 
 // Variables 2
 Exer.variables2 = function () {
 
   // Write a statement that declares a variable.
+  var x;
 
   // Write a statement to assign a number value to your variable.
+  var x = 5;
 
   // Return the variable.
-
+  return x;
 };
 
 // Variables 3
 Exer.variables3 = function () {
 
   // Write a statement that declares a variable and initializes it to a string.
-
+var string = "";
   // Return the variable.
-
+return string;
 };
 
 // Variables 4
 Exer.variables4 = function ( n ) {
 
   // Return the parameter.
-
+return n;
 };
 
 // Variables 5
 Exer.variables5 = function ( n ) {
 
   // Declare a new variable and initialize it to the value of `n`.
-
+var newV = n;
   // Return the new variable.
+  return newV;
 
 };
 
@@ -68,12 +72,13 @@ Exer.variables6 = function ( stacys ) {
 
   // You have 3 apples
   // (declare a variable named `apples` and initialize it to `3`)
-
+  var apples = 3;
   // Stacy gives you more apples
   // (the parameter `stacys`)
+  var total = apples + stacys;
 
   // Return the total number of apples you have.
-
+  return total;
 };
 
 // Variables 7
@@ -141,13 +146,14 @@ Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
 Exer.console1 = function () {
 
   // Output something to the console.
-
+console.log("go green and gold");
 };
 
 // Console 2
 Exer.console2 = function ( printme ) {
 
   // Print the parameter `printme` to the console.
+  console.log(printme);
 
 };
 
@@ -159,7 +165,7 @@ Exer.console2 = function ( printme ) {
 Exer.console3 = function ( data ) {
 
   // your answer here
-
+  console.log("The magic word is \"" + data + "\"");
 };
 
 // Console 4
@@ -167,7 +173,8 @@ Exer.console4 = function () {
 
   // Use comma-separated values to output two things to the console with one
   // call.
-
+  var x = (4, 5)
+console.log(x);
 };
 
 // Console 5
@@ -175,9 +182,10 @@ Exer.console4 = function () {
 Exer.console5 = function ( x, y ) {
 
   // Output the first parameter `x` to the console.
+  console.log(x);
 
   // Make the function return the parameter `y` plus 1.
-
+ return y + 1;
 };
 
 /*---------------------------    RETURN VALUES    ----------------------------*/
@@ -256,7 +264,7 @@ Exer.confirm1 = function () {
 Exer.control1 = function () {
 
   // Use prompt to get a number from a user
-
+var number = prompt("give me a number")
   // Print that number to the console
 
 };
