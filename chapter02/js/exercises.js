@@ -14,6 +14,7 @@ Exer.expressions1 = function () {
 Exer.statements1 = function () {
 
   // Write a statement that is not undefined.
+
   5 === 5;
   
 };
@@ -24,9 +25,10 @@ Exer.statements1 = function () {
 // Variables 1
 Exer.variables1 = function () {
 
-  // Write a statement that declares a variable.d
+  // Write a statement that declares a variable.
+var x;
   // Return that variable.
-  var x;
+return x;
 };
 
 // Variables 2
@@ -178,6 +180,7 @@ Exer.console4 = function () {
   // call.
   
 console.log(4, 5);
+
 };
 
 // Console 5
