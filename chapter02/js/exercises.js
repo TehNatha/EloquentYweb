@@ -32,13 +32,13 @@ return x;
 Exer.variables2 = function () {
 
   // Write a statement that declares a variable.
-  var x;
+  var hi;
 
   // Write a statement to assign a number value to your variable.
-  var x = 5;
+  var hi = 5;
 
   // Return the variable.
-  return x;
+  return hi;
 };
 
 // Variables 3
@@ -86,7 +86,9 @@ Exer.variables6 = function ( stacys ) {
 Exer.variables7 = function ( change ) {
 
   // You find a quarter.
-
+  var quarter = "25";
+  var dime = "10";
+  var change = quarter - dime
   // Then you spend a dime on old fashioned candy.
   // How much money do you have now?
 
@@ -94,7 +96,7 @@ Exer.variables7 = function ( change ) {
   // sign to the beginning.
 
   // Return that string.
-
+  return "\$1\." + change;
 };
 
 
@@ -103,15 +105,16 @@ Exer.variables7 = function ( change ) {
 // Keywords 1
 // Uncomment the following function by removing the slash-asterisk pairs.
 // Fix the function so no keywords or reserved words are improperly used.
-/*
-Exer.keywords1 = function ( true, two ) {
-  var new = 2;
-  var const = two+2;
-  true += "2";
-  var function = new + const + true + two;
-  return function;
+
+Exer.keywords1 = function ( param1, two ) {
+  var duece = 2;
+  var foPiece = two+2;
+  param1 += "2";
+  var result = duece + foPiece + param1 + two;
+  return result;
 };
-*/
+
+
 
 /*--------------------------    THE ENVIRONMENT    ---------------------------*/
 
