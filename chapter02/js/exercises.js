@@ -345,20 +345,20 @@ console.log("Thanks for visiting Pier One and Three Quarters!");
 Exer.condition3 = function ( whatDay ) {
 
   // Declare and initialize `luckyNumber`
- /*var luckyNumber = 7;
+ var luckyNumber = 7;
   // If the length of `whatDay` is 6 or less...
-    if(whatDay.length <= 6) {
+   /* if(whatDay.length <= 6) {
       whatDay + "!";
-    } else if(whatDay === "Mannersday"){
+    } else if(whatDay === Mannersday){
       whatDay + 4;
-    } else if(whatDay === "Foosday");{
+    } else if(whatDay === Foosday);{
       luckyNumber + 2;
-    } else if(whatDay === "Heyday"){
-      luckyNumber + l;
+    } else if(whatDay === Heyday){
+      luckyNumber + "l";
     } else {
       luckyNumber = Infinity;
     }
-    return luckyNumber;*/
+    return luckyNumber; */
 
   // If `whatDay` is "Mannersday"...
   // If `whatDay` is "Foosday"...
@@ -373,7 +373,18 @@ Exer.condition3 = function ( whatDay ) {
 Exer.condition4 = function () {
 
   // Prompt the user
-
+  var number = prompt("Enter today's date, please.")
+  if (isNaN(number)){
+    console.log('What do you think this is, bub? Wonderland?');
+  }else if(number < 1){
+    console.log('Negativelaaaaaaand~!');
+  }else if(number > 31){
+    console.log('Are they paying you overtime for this?');
+  }else if(number >= 29 || number <= 31){
+    console.log('I sure hope it isn\'t February.');
+  }else{
+    console.log("Did you know? There are exactly " + number + " ways to make today awesome!");
+  };
   // If the user's input is not a number...
   // Otherwise...
     // If the user's input is less than 1...
@@ -441,13 +452,19 @@ Exer.doWhile2 = function () {
 // Indenting 1
 // Correctly indent the following code block using TWO spaces for each block
 Exer.indenting1 = function() {
-var firstName = "Zachery"; var lastName = "Moneypenny"; if(firstName === "Zachery") { lastName = "Johnson"; }
+  var firstName = "Zachery"; 
+  var lastName = "Moneypenny"; 
+    if(firstName === "Zachery") {
+      lastName = "Johnson"; }
 };
 
 // Indenting 2
 // Correctly indent the following code block using FOUR spaces for each block
 Exer.indenting2 = function() {
-var firstName = "Penny"; var lastName = "Moneywhistle"; if(firstName === "Penny") { lastName = "Johnson"; }
+    var firstName = "Penny"; 
+    var lastName = "Moneywhistle"; 
+        if(firstName === "Penny") { 
+            lastName = "Johnson"; }
 };
 
 /*-----------------------------    FOR LOOPS    ------------------------------*/
