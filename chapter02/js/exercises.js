@@ -133,12 +133,18 @@ Exer.environment1 = function () {
 // Call cornTortilla and pass it the values "chicken", "queso", "bacon", and
 // "lime".
 Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
+<<<<<<< HEAD
 
   // Your work here
   recombobulate();
   setPowerLevel(9500);
   cornTortilla("chicken", "queso", "bacon", "lime");
   
+=======
+  recombobulate();
+  setPowerLevel(9500);
+  cornTortilla("chicken", "queso", "bacon", "lime");
+>>>>>>> cf6d079102dab1d77dee4f6f0cef13a125bc429b
 };
 
 
@@ -254,19 +260,27 @@ Exer.return5 = function () {
 // Prompt 1
 // Call prompt with the string and return the result.
 Exer.prompt1 = function () {
+<<<<<<< HEAD
 
   // Your work here
   return prompt("What is the answer to the meaning of life, the universe, and everything?");
 
+=======
+  return prompt("What is the answer to the meaning of life, the universe, and everything?");
+>>>>>>> cf6d079102dab1d77dee4f6f0cef13a125bc429b
 };
 
 // Confirm 1
 // Call confirm with the string and return the result.
 Exer.confirm1 = function () {
+<<<<<<< HEAD
 
   // Your work here
   return confirm("Imma let you finish, but Javascript is one of the best programming languages of all time...one of the best programming languages of all time!");
 
+=======
+  return confirm("Imma let you finish, but Javascript is one of the best programming languages of all time...one of the best programming languages of all time!");
+>>>>>>> cf6d079102dab1d77dee4f6f0cef13a125bc429b
 };
 
 /*----------------------------    CONTROL FLOW    ----------------------------*/
@@ -309,7 +323,11 @@ Exer.control2 = function ( bar ) {
 // Expect `isSerious` to be a boolean
 Exer.condition1 = function ( isSerious ) {
     if(isSerious === false){
+<<<<<<< HEAD
       console.log("On second thoughts, let's not go to Camelot. It is a silly place.");
+=======
+      console.log("On second thoughts, let's not go to Camelot. It is a silly place.")
+>>>>>>> cf6d079102dab1d77dee4f6f0cef13a125bc429b
     };
 
 
@@ -345,6 +363,7 @@ console.log("Thanks for visiting Pier One and Three Quarters!");
 Exer.condition3 = function ( whatDay ) {
 
   // Declare and initialize `luckyNumber`
+<<<<<<< HEAD
  var luckyNumber = 7;
   // If the length of `whatDay` is 6 or less...
    /* if(whatDay.length <= 6) {
@@ -359,6 +378,22 @@ Exer.condition3 = function ( whatDay ) {
       luckyNumber = Infinity;
     }
     return luckyNumber; */
+=======
+ /*var luckyNumber = 7;
+  // If the length of `whatDay` is 6 or less...
+    if(whatDay.length <= 6) {
+      whatDay + "!";
+    } else if(whatDay === "Mannersday"){
+      whatDay + 4;
+    } else if(whatDay === "Foosday");{
+      luckyNumber + 2;
+    } else if(whatDay === "Heyday"){
+      luckyNumber + l;
+    } else {
+      luckyNumber = Infinity;
+    }
+    return luckyNumber;*/
+>>>>>>> cf6d079102dab1d77dee4f6f0cef13a125bc429b
 
   // If `whatDay` is "Mannersday"...
   // If `whatDay` is "Foosday"...

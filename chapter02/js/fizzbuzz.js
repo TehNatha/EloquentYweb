@@ -15,6 +15,14 @@ Fizz.buzz = function () {
         
         console.log(i);
     };
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cf6d079102dab1d77dee4f6f0cef13a125bc429b
 };
 
+=======
+>>>>>>> da7932467eb451f01ab584e12bbc63028bd39c06
 };
+
+
