@@ -5,7 +5,7 @@
 // evaluated value is not undefined.
 Exer.expressions1 = function () {
 
-  return /* your answer here */ ;
+  return (0/0)/* your answer here */ ;
 
 };
 
@@ -13,7 +13,7 @@ Exer.expressions1 = function () {
 // Statements 1
 Exer.statements1 = function () {
 
-  // Write a statement that is not undefined.
+  var dog; dog = false;// Write a statement that is not undefined.
 
 };
 /* jshint ignore:end */
@@ -23,7 +23,7 @@ Exer.statements1 = function () {
 // Variables 1
 Exer.variables1 = function () {
 
-  // Write a statement that declares a variable.
+  var god = 'hello';// Write a statement that declares a variable.
 
   // Return that variable.
 
@@ -32,11 +32,11 @@ Exer.variables1 = function () {
 // Variables 2
 Exer.variables2 = function () {
 
-  // Write a statement that declares a variable.
+  var steer;// Write a statement that declares a variable.
 
-  // Write a statement to assign a number value to your variable.
+  steer = 5; // Write a statement to assign a number value to your variable.
 
-  // Return the variable.
+  return steer;// Return the variable.
 
 };
 
