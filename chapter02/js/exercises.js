@@ -135,6 +135,9 @@ Exer.environment1 = function () {
 Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
 
   // Your work here
+  recombobulate();
+  setPowerLevel(9500);
+  cornTortilla("chicken", "queso", "bacon", "lime");
   
 };
 
@@ -253,6 +256,7 @@ Exer.return5 = function () {
 Exer.prompt1 = function () {
 
   // Your work here
+  return prompt("What is the answer to the meaning of life, the universe, and everything?");
 
 };
 
@@ -261,6 +265,7 @@ Exer.prompt1 = function () {
 Exer.confirm1 = function () {
 
   // Your work here
+  return confirm("Imma let you finish, but Javascript is one of the best programming languages of all time...one of the best programming languages of all time!");
 
 };
 
@@ -304,7 +309,7 @@ Exer.control2 = function ( bar ) {
 // Expect `isSerious` to be a boolean
 Exer.condition1 = function ( isSerious ) {
     if(isSerious === false){
-      console.log("On second thoughts, let's not go to Camelot. It is a silly place.")
+      console.log("On second thoughts, let's not go to Camelot. It is a silly place.");
     };
 
 
@@ -405,11 +410,12 @@ Exer.while1 = function () {
 // While 2
 // Recreate the code in the function without a loop
 Exer.while2 = function () {
-  var deadWitch = "I'm melting!";
-  while(deadWitch.length > 0) {
-    console.log(deadWitch);
-    deadWitch = deadWitch.substr(2);
-  }
+    console.log("I'm melting!");
+    console.log("m melting!");
+    console.log("melting!");
+    console.log("lting!");
+    console.log("ing!");
+    console.log("g!");
   console.log("What a world!");
 };
 
@@ -417,21 +423,26 @@ Exer.while2 = function () {
 // Turn the code in the function into a single do while loop.
 // Hint: 0, 1, and 2 are remainders from dividing numbers by 3.
 Exer.doWhile1 = function () {
-  console.log(0);
-  console.log(1);
-  console.log(2);
-  console.log(0);
-  console.log(1);
-  console.log(2);
+  var i = 3;
+  do {
+    var results = i%3;
+    i++;
+    console.log(results);
+  } while(i < 9);
+
 };
 
 // doWhile 2
 // Recreate the code in the function without a loop
 Exer.doWhile2 = function () {
-  var trainNum = 1;
-  do {
-    console.log("Train# " + trainNum + ": In flight!?");
-  } while (trainNum++ < 7);
+    console.log("Train# 1: In flight!?");
+    console.log("Train# 2: In flight!?");
+    console.log("Train# 3: In flight!?");
+    console.log("Train# 4: In flight!?");
+    console.log("Train# 5: In flight!?");
+    console.log("Train# 6: In flight!?");
+    console.log("Train# 7d: In flight!?");
+ 
 };
 
 /*---------------------------    INDENTING CODE    ---------------------------*/
@@ -472,20 +483,20 @@ Exer.for1 = function () {
 
 // For 2
 // Rewrite the repetative code with for loops.
-Exer.for2 = function () {
+/*Exer.for2 = function () {
+  for(i = 0; i < 10; i++){
+    var hi = "Hi!";
+    var name = "My nam is";
+    var slim = "Slim Shady";
+    if(i === 1){
+      console.log(hi);
 
-  console.log( "Hi!" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "Slim Shady" );
-  console.log( "Hi!" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "Slim Shady" );
-
-};
+    }else if(i === 2 || i === 3 ||  i === 4 || i === 7 || i === 8 || i === 9){
+      console.log(name);
+    }else if(i === 5 || i === 10){
+      console.log(slim);
+    };
+  };*/
 
 // For 3
 // Write a loop that counts backwards from 20 to 5 and prints the number and
@@ -493,6 +504,13 @@ Exer.for2 = function () {
 Exer.for3 = function () {
 
   // Your work here
+  for(i = 20; i > 4; i--){
+    if(i%2 === 0){
+      console.log(i + "even");
+    }else{
+      console.log(i + "odd");
+    };
+  };
 
 };
 
