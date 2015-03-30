@@ -136,10 +136,11 @@ Exer.environment1 = function () {
 // "lime".
 Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
 
+  // Your work here
   recombobulate();
   setPowerLevel(9500);
   cornTortilla("chicken", "queso", "bacon", "lime");
-
+  
 };
 
 
@@ -309,7 +310,7 @@ Exer.control2 = function ( bar ) {
 // Expect `isSerious` to be a boolean
 Exer.condition1 = function ( isSerious ) {
     if(isSerious === false){
-      console.log("On second thoughts, let's not go to Camelot. It is a silly place.")
+      console.log("On second thoughts, let's not go to Camelot. It is a silly place.");
     };
 
 
@@ -411,11 +412,12 @@ Exer.while1 = function () {
 // While 2
 // Recreate the code in the function without a loop
 Exer.while2 = function () {
-  var deadWitch = "I'm melting!";
-  while(deadWitch.length > 0) {
-    console.log(deadWitch);
-    deadWitch = deadWitch.substr(2);
-  }
+    console.log("I'm melting!");
+    console.log("m melting!");
+    console.log("melting!");
+    console.log("lting!");
+    console.log("ing!");
+    console.log("g!");
   console.log("What a world!");
 };
 /* jshint ignore:end */
@@ -424,22 +426,27 @@ Exer.while2 = function () {
 // Turn the code in the function into a single do while loop.
 // Hint: 0, 1, and 2 are remainders from dividing numbers by 3.
 Exer.doWhile1 = function () {
-  console.log(0);
-  console.log(1);
-  console.log(2);
-  console.log(0);
-  console.log(1);
-  console.log(2);
+  var i = 3;
+  do {
+    var results = i%3;
+    i++;
+    console.log(results);
+  } while(i < 9);
+
 };
 
 /* jshint ignore:start */
 // doWhile 2
 // Recreate the code in the function without a loop
 Exer.doWhile2 = function () {
-  var trainNum = 1;
-  do {
-    console.log("Train# " + trainNum + ": In flight!?");
-  } while (trainNum++ < 7);
+    console.log("Train# 1: In flight!?");
+    console.log("Train# 2: In flight!?");
+    console.log("Train# 3: In flight!?");
+    console.log("Train# 4: In flight!?");
+    console.log("Train# 5: In flight!?");
+    console.log("Train# 6: In flight!?");
+    console.log("Train# 7d: In flight!?");
+ 
 };
 /* jshint ignore:end */
 
@@ -504,6 +511,13 @@ Exer.for2 = function () {
 Exer.for3 = function () {
 
   // Your work here
+  for(i = 20; i > 4; i--){
+    if(i%2 === 0){
+      console.log(i + "even");
+    }else{
+      console.log(i + "odd");
+    };
+  };
 
 };
 
