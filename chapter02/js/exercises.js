@@ -5,14 +5,14 @@
 // evaluated value is not undefined.
 Exer.expressions1 = function () {
 
-  return /* your answer here */ ;
+  return (22) ;
 
 };
 
 // Statements 1
 Exer.statements1 = function () {
 
-  // Write a statement that is not undefined.
+  1;
 
 };
 
@@ -21,29 +21,26 @@ Exer.statements1 = function () {
 // Variables 1
 Exer.variables1 = function () {
 
-  // Write a statement that declares a variable.
-
-  // Return that variable.
-
+  var caught = 21 * 21;
+  
 };
 
 // Variables 2
 Exer.variables2 = function () {
 
-  // Write a statement that declares a variable.
+  var four = 4;
 
-  // Write a statement to assign a number value to your variable.
-
-  // Return the variable.
+  console.log(four * four)
+  
 
 };
 
 // Variables 3
 Exer.variables3 = function () {
 
-  // Write a statement that declares a variable and initializes it to a string.
-
-  // Return the variable.
+  var mood = "light";
+  console.log(mood);
+  
 
 };
 
