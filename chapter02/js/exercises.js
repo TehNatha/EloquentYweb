@@ -5,7 +5,7 @@
 // evaluated value is not undefined.
 Exer.expressions1 = function () {
 
-  return /* your answer here */ ("got it");
+  return /* your answer here */ (5 + 5);
 
 };
 
@@ -13,7 +13,7 @@ Exer.expressions1 = function () {
 Exer.statements1 = function () {
 
   // Write a statement that is not undefined.
-  5 === 5;
+  1;
   
 };
 
@@ -22,9 +22,10 @@ Exer.statements1 = function () {
 // Variables 1
 Exer.variables1 = function () {
 
-  // Write a statement that declares a variable.d
+  // Write a statement that declares a variable.
   // Return that variable.
-  var x;
+    var next;
+   return next;
 };
 
 // Variables 2
@@ -133,18 +134,13 @@ Exer.environment1 = function () {
 // Call cornTortilla and pass it the values "chicken", "queso", "bacon", and
 // "lime".
 Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
-<<<<<<< HEAD
+
 
   // Your work here
   recombobulate();
   setPowerLevel(9500);
   cornTortilla("chicken", "queso", "bacon", "lime");
-  
-=======
-  recombobulate();
-  setPowerLevel(9500);
-  cornTortilla("chicken", "queso", "bacon", "lime");
->>>>>>> cf6d079102dab1d77dee4f6f0cef13a125bc429b
+
 };
 
 
@@ -203,7 +199,7 @@ Exer.console5 = function ( x, y ) {
 Exer.return1 = function () {
 
   // your work goes here
-  magicFunc();
+  
   console.log(magicFunc());
 
 };
@@ -213,7 +209,7 @@ Exer.return1 = function () {
 Exer.return2 = function () {
 
   // your work goes here
-  magicFunc();
+  
   return magicFunc();
 
 };
@@ -234,7 +230,7 @@ Exer.return3 = function () {
 Exer.return4 = function () {
  
   // your work goes here
-  console.log(magicFunc() + magicFunc());
+        console.log(magicFunc() + magicFunc());
 
 
 };
@@ -260,27 +256,22 @@ Exer.return5 = function () {
 // Prompt 1
 // Call prompt with the string and return the result.
 Exer.prompt1 = function () {
-<<<<<<< HEAD
+
 
   // Your work here
   return prompt("What is the answer to the meaning of life, the universe, and everything?");
 
-=======
-  return prompt("What is the answer to the meaning of life, the universe, and everything?");
->>>>>>> cf6d079102dab1d77dee4f6f0cef13a125bc429b
 };
 
 // Confirm 1
 // Call confirm with the string and return the result.
 Exer.confirm1 = function () {
-<<<<<<< HEAD
+
 
   // Your work here
   return confirm("Imma let you finish, but Javascript is one of the best programming languages of all time...one of the best programming languages of all time!");
 
-=======
-  return confirm("Imma let you finish, but Javascript is one of the best programming languages of all time...one of the best programming languages of all time!");
->>>>>>> cf6d079102dab1d77dee4f6f0cef13a125bc429b
+
 };
 
 /*----------------------------    CONTROL FLOW    ----------------------------*/
@@ -322,17 +313,15 @@ Exer.control2 = function ( bar ) {
 // Conditional 1
 // Expect `isSerious` to be a boolean
 Exer.condition1 = function ( isSerious ) {
-    if(isSerious === false){
-<<<<<<< HEAD
-      console.log("On second thoughts, let's not go to Camelot. It is a silly place.");
-=======
-      console.log("On second thoughts, let's not go to Camelot. It is a silly place.")
->>>>>>> cf6d079102dab1d77dee4f6f0cef13a125bc429b
-    };
-
-
   // If `isSerious` is false, output the message:
   //     On second thoughts, let's not go to Camelot. It is a silly place.
+
+    if(isSerious === false){
+
+      console.log(" On second thoughts, let's not go to Camelot. It is a silly place.");
+
+    };
+  
 
 };
 
@@ -363,37 +352,34 @@ console.log("Thanks for visiting Pier One and Three Quarters!");
 Exer.condition3 = function ( whatDay ) {
 
   // Declare and initialize `luckyNumber`
-<<<<<<< HEAD
+  // If the length of `whatDay` is 6 or less...
+    
+
  var luckyNumber = 7;
-  // If the length of `whatDay` is 6 or less...
-   /* if(whatDay.length <= 6) {
-      whatDay + "!";
-    } else if(whatDay === Mannersday){
-      whatDay + 4;
-    } else if(whatDay === Foosday);{
-      luckyNumber + 2;
-    } else if(whatDay === Heyday){
-      luckyNumber + "l";
-    } else {
-      luckyNumber = Infinity;
-    }
-    return luckyNumber; */
-=======
- /*var luckyNumber = 7;
-  // If the length of `whatDay` is 6 or less...
-    if(whatDay.length <= 6) {
-      whatDay + "!";
-    } else if(whatDay === "Mannersday"){
-      whatDay + 4;
-    } else if(whatDay === "Foosday");{
-      luckyNumber + 2;
-    } else if(whatDay === "Heyday"){
-      luckyNumber + l;
-    } else {
-      luckyNumber = Infinity;
-    }
-    return luckyNumber;*/
->>>>>>> cf6d079102dab1d77dee4f6f0cef13a125bc429b
+ if(whatDay.length <= 6) {
+
+   return luckyNumber + "!";
+
+ } else if(whatDay === "Mannersday"){
+
+   return console.log(whatDay + 4);
+
+ } else if(whatDay === "Foosday"){
+
+  return luckyNumber + 2;
+
+} else if(whatDay === "Heyday"){
+
+ return luckyNumber + "l";
+
+} else {
+
+  return luckyNumber === Infinity;
+
+}
+
+return luckyNumber; 
+
 
   // If `whatDay` is "Mannersday"...
   // If `whatDay` is "Foosday"...
@@ -402,6 +388,7 @@ Exer.condition3 = function ( whatDay ) {
   
   // Return `luckyNumber`
 
+
 };
 
 // Conditional 4
@@ -409,14 +396,16 @@ Exer.condition4 = function () {
 
   // Prompt the user
   var number = prompt("Enter today's date, please.")
-  if (isNaN(number)){
+ /* if (isNaN(number)){
     console.log('What do you think this is, bub? Wonderland?');
-  }else if(number < 1){
-    console.log('Negativelaaaaaaand~!');
+  }else {
+
+    if(number < 1){
+      console.log('Negativelaaaaaaand~!');
   }else if(number > 31){
-    console.log('Are they paying you overtime for this?');
+      console.log('Are they paying you overtime for this?');
   }else if(number >= 29 || number <= 31){
-    console.log('I sure hope it isn\'t February.');
+      console.log('I sure hope it isn\'t February.');
   }else{
     console.log("Did you know? There are exactly " + number + " ways to make today awesome!");
   };
@@ -425,7 +414,7 @@ Exer.condition4 = function () {
     // If the user's input is less than 1...
     // If the user's input is greater than 31...
     // If the user's input between 29 and 31, inclusive...
-    // Otherwise...
+    // Otherwise...  */
 
 };
 
@@ -458,13 +447,14 @@ Exer.while2 = function () {
 // Turn the code in the function into a single do while loop.
 // Hint: 0, 1, and 2 are remainders from dividing numbers by 3.
 Exer.doWhile1 = function () {
-  var i = 3;
+  /*var i = 3;
   do {
     var results = i%3;
     i++;
     console.log(results);
   } while(i < 9);
 
+*/
 };
 
 // doWhile 2
@@ -476,7 +466,7 @@ Exer.doWhile2 = function () {
     console.log("Train# 4: In flight!?");
     console.log("Train# 5: In flight!?");
     console.log("Train# 6: In flight!?");
-    console.log("Train# 7d: In flight!?");
+    console.log("Train# 7: In flight!?");
  
 };
 
@@ -518,10 +508,10 @@ Exer.for1 = function () {
 
 // For 2
 // Rewrite the repetative code with for loops.
-/*Exer.for2 = function () {
-  for(i = 0; i < 10; i++){
+Exer.for2 = function () {
+  /*for(i = 0; i < 10; i++){
     var hi = "Hi!";
-    var name = "My nam is";
+    var name = "My name is";
     var slim = "Slim Shady";
     if(i === 1){
       console.log(hi);
@@ -530,8 +520,8 @@ Exer.for1 = function () {
       console.log(name);
     }else if(i === 5 || i === 10){
       console.log(slim);
-    };
-  };*/
+    };*/
+  };
 
 // For 3
 // Write a loop that counts backwards from 20 to 5 and prints the number and
