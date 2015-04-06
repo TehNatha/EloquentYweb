@@ -5,7 +5,7 @@
 // evaluated value is not undefined.
 Exer.expressions1 = function () {
 
-  return /* your answer here */ ("got it");
+  return /* your answer here */ (5 + 5);
 
 };
 
@@ -14,7 +14,7 @@ Exer.expressions1 = function () {
 Exer.statements1 = function () {
 
   // Write a statement that is not undefined.
-  5 === 5;
+  1;
   
 };
 /* jshint ignore:end */
@@ -24,9 +24,10 @@ Exer.statements1 = function () {
 // Variables 1
 Exer.variables1 = function () {
 
-  // Write a statement that declares a variable.d
+  // Write a statement that declares a variable.
   // Return that variable.
-  var x;
+    var next;
+   return next;
 };
 
 // Variables 2
@@ -140,7 +141,7 @@ Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
   recombobulate();
   setPowerLevel(9500);
   cornTortilla("chicken", "queso", "bacon", "lime");
-  
+
 };
 
 
@@ -200,7 +201,7 @@ Exer.console5 = function ( x, y ) {
 Exer.return1 = function () {
 
   // your work goes here
-  magicFunc();
+  
   console.log(magicFunc());
 
 };
@@ -210,7 +211,7 @@ Exer.return1 = function () {
 Exer.return2 = function () {
 
   // your work goes here
-  magicFunc();
+  
   return magicFunc();
 
 };
@@ -231,7 +232,7 @@ Exer.return3 = function () {
 Exer.return4 = function () {
  
   // your work goes here
-  console.log(magicFunc() + magicFunc());
+        console.log(magicFunc() + magicFunc());
 
 
 };
@@ -309,13 +310,15 @@ Exer.control2 = function ( bar ) {
 // Conditional 1
 // Expect `isSerious` to be a boolean
 Exer.condition1 = function ( isSerious ) {
-    if(isSerious === false){
-      console.log("On second thoughts, let's not go to Camelot. It is a silly place.");
-    };
-
-
   // If `isSerious` is false, output the message:
   //     On second thoughts, let's not go to Camelot. It is a silly place.
+
+    if(isSerious === false){
+
+      console.log("On second thoughts, let's not go to Camelot. It is a silly place.");
+
+    };
+  
 
 };
 
@@ -346,20 +349,33 @@ console.log("Thanks for visiting Pier One and Three Quarters!");
 Exer.condition3 = function ( whatDay ) {
 
   // Declare and initialize `luckyNumber`
- var luckyNumber = 7;
   // If the length of `whatDay` is 6 or less...
-   /* if(whatDay.length <= 6) {
-      whatDay + "!";
-    } else if(whatDay === Mannersday){
-      whatDay + 4;
-    } else if(whatDay === Foosday);{
-      luckyNumber + 2;
-    } else if(whatDay === Heyday){
-      luckyNumber + "l";
-    } else {
-      luckyNumber = Infinity;
-    }
-    return luckyNumber; */
+    
+
+ var luckyNumber = 7;
+ if(whatDay.length <= 6) {
+
+   return luckyNumber + "!";
+
+ } else if(whatDay === "Mannersday"){
+
+   return console.log(whatDay + 4);
+
+ } else if(whatDay === "Foosday"){
+
+  return luckyNumber + 2;
+
+} else if(whatDay === "Heyday"){
+
+ return luckyNumber + "l";
+
+} else {
+
+  return luckyNumber === Infinity;
+
+}
+
+return luckyNumber; 
 
   // If `whatDay` is "Mannersday"...
   // If `whatDay` is "Foosday"...
@@ -368,6 +384,7 @@ Exer.condition3 = function ( whatDay ) {
 
   // Return `luckyNumber`
 
+
 };
 
 // Conditional 4
@@ -375,14 +392,16 @@ Exer.condition4 = function () {
 
   // Prompt the user
   var number = prompt("Enter today's date, please.")
-  if (isNaN(number)){
+ /* if (isNaN(number)){
     console.log('What do you think this is, bub? Wonderland?');
-  }else if(number < 1){
-    console.log('Negativelaaaaaaand~!');
+  }else {
+
+    if(number < 1){
+      console.log('Negativelaaaaaaand~!');
   }else if(number > 31){
-    console.log('Are they paying you overtime for this?');
+      console.log('Are they paying you overtime for this?');
   }else if(number >= 29 || number <= 31){
-    console.log('I sure hope it isn\'t February.');
+      console.log('I sure hope it isn\'t February.');
   }else{
     console.log("Did you know? There are exactly " + number + " ways to make today awesome!");
   };
@@ -391,7 +410,7 @@ Exer.condition4 = function () {
     // If the user's input is less than 1...
     // If the user's input is greater than 31...
     // If the user's input between 29 and 31, inclusive...
-    // Otherwise...
+    // Otherwise...  */
 
 };
 
@@ -426,13 +445,14 @@ Exer.while2 = function () {
 // Turn the code in the function into a single do while loop.
 // Hint: 0, 1, and 2 are remainders from dividing numbers by 3.
 Exer.doWhile1 = function () {
-  var i = 3;
+  /*var i = 3;
   do {
     var results = i%3;
     i++;
     console.log(results);
   } while(i < 9);
 
+*/
 };
 
 /* jshint ignore:start */
@@ -445,7 +465,7 @@ Exer.doWhile2 = function () {
     console.log("Train# 4: In flight!?");
     console.log("Train# 5: In flight!?");
     console.log("Train# 6: In flight!?");
-    console.log("Train# 7d: In flight!?");
+    console.log("Train# 7: In flight!?");
  
 };
 /* jshint ignore:end */
