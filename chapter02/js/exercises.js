@@ -25,7 +25,7 @@ Exer.variables1 = function () {
 
   var god = 'hello';// Write a statement that declares a variable.
 
-  // Return that variable.
+  return 'hello'// Return that variable.
 
 };
 
@@ -43,25 +43,25 @@ Exer.variables2 = function () {
 // Variables 3
 Exer.variables3 = function () {
 
-  // Write a statement that declares a variable and initializes it to a string.
+  var mood = "happy";
+  console.log(mood);// Write a statement that declares a variable and initializes it to a string.
 
-  // Return the variable.
-//dogs brak
+  return "happy" ;// Return the variable.
 };
 
 // Variables 4
 Exer.variables4 = function ( n ) {
 
-  // Return the parameter.
+ return n;  // Return the parameter.
 
 };
 
 // Variables 5
 Exer.variables5 = function ( n ) {
 
-  // Declare a new variable and initialize it to the value of `n`.
+var t = n;// Declare a new variable and initialize it to the value of `n`.
 
-  // Return the new variable.
+  return t;// Return the new variable.
 
 };
 
@@ -69,12 +69,12 @@ Exer.variables5 = function ( n ) {
 Exer.variables6 = function ( stacys ) {
 
   // You have 3 apples
-  // (declare a variable named `apples` and initialize it to `3`)
+  var apples = 3;// (declare a variable named `apples` and initialize it to `3`)
 
-  // Stacy gives you more apples
-  // (the parameter `stacys`)
+  apples = apples + stacys;// Stacy gives you more apples
+  console.log(stacys);// (the parameter `stacys`)
 
-  // Return the total number of apples you have.
+ return apples;// Return the total number of apples you have.
 
 };
 
@@ -82,15 +82,15 @@ Exer.variables6 = function ( stacys ) {
 // You have a certain amount of pocket change given by the parameter provided
 Exer.variables7 = function ( change ) {
 
-  // You find a quarter.
+  //var quarter = 0.25;// You find a quarter.
 
-  // Then you spend a dime on old fashioned candy.
-  // How much money do you have now?
-
-  // Use type coercion to turn your pocket change into a string add a dollar
+  //quarter = quarter - 0.10;// Then you spend a dime on old fashioned candy.
+  //var quater = 15;  How much money do you have now?
+  var totes= "$" + ( 0.15 + change );
+  // Use type coercion to turn your pocket change into a string. Add a dollar
   // sign to the beginning.
 
-  // Return that string.
+  return totes;// Return that string.
 
 };
 
@@ -100,15 +100,14 @@ Exer.variables7 = function ( change ) {
 // Keywords 1
 // Uncomment the following function by removing the slash-asterisk pairs.
 // Fix the function so no keywords or reserved words are improperly used.
-/*
-Exer.keywords1 = function ( true, two ) {
-  var new = 2;
-  var const = two+2;
-  true += "2";
-  var function = new + const + true + two;
-  return function;
+
+Exer.keywords1 = function ( truDat, two ) {
+  var newt = 2;
+  var constitution = two+2;
+  truDat += "2";
+  var music = newt + constitution + truDat + two;
+  return music;
 };
-*/
 
 /*--------------------------    THE ENVIRONMENT    ---------------------------*/
 
@@ -119,7 +118,7 @@ Exer.environment1 = function () {
   // return window;
   // return document;
   // return history;
-  // return browser;
+  return browser;
   // return navigator;
 
 };
@@ -132,8 +131,10 @@ Exer.environment1 = function () {
 // "lime".
 Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
 
-  // Your work here
-
+  recombobulate();
+  setPowerLevel(9001);
+  cornTortilla("chicken", "queso", "bacon", "lime");// Your work here
+  
 };
 
 
@@ -142,14 +143,14 @@ Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
 // Console 1
 Exer.console1 = function () {
 
-  // Output something to the console.
+  console.log();// Output something to the console.
 
 };
 
 // Console 2
 Exer.console2 = function ( printme ) {
 
-  // Print the parameter `printme` to the console.
+  console.log(printme);// Print the parameter `printme` to the console.
 
 };
 
@@ -160,14 +161,14 @@ Exer.console2 = function ( printme ) {
 // change the value of the variable `data`.
 Exer.console3 = function ( data ) {
 
-  // your answer here
+  console.log('The magic word is "'+data+'"');// your answer here
 
 };
 
 // Console 4
 Exer.console4 = function () {
 
-  // Use comma-separated values to output two things to the console with one
+  console.log("Mariah", "Carey");// Use comma-separated values to output two things to the console with one
   // call.
 
 };
@@ -176,9 +177,8 @@ Exer.console4 = function () {
 // Do not change the value of the variable `y`.
 Exer.console5 = function ( x, y ) {
 
-  // Output the first parameter `x` to the console.
-
-  // Make the function return the parameter `y` plus 1.
+  console.log(x);// Output the first parameter `x` to the console.
+  return y + 1;// Make the function return the parameter `y` plus 1.
 
 };
 
@@ -188,6 +188,7 @@ Exer.console5 = function ( x, y ) {
 // Call and log out the result of `magicFunc`.
 Exer.return1 = function () {
 
+  console.log(magicFunc());
   // your work goes here
 
 };
@@ -196,6 +197,7 @@ Exer.return1 = function () {
 // Call and return the result of `magicFunc`.
 Exer.return2 = function () {
 
+   return magicFunc();
   // your work goes here
 
 };
@@ -203,18 +205,17 @@ Exer.return2 = function () {
 // Return 3
 Exer.return3 = function () {
 
-  // Call `strShift` with the argument "abczABCZ". Log the result.
-
-  // Return that same result with "123" concatenated to the end.
+  var pink = strShift('abczABCZ');
+  console.log(pink);// Call `strShift` with the argument "abczABCZ". Log the result.
+  return pink + 123;// Return that same result with "123" concatenated to the end.
 
 };
-
 // Return 4
 // Log the result of the string concatenation of two separate calls to
 // `magicFunc`.
 Exer.return4 = function () {
 
-  // your work goes here
+ console.log ("" + magicFunc() + magicFunc());// your work goes here
 
 };
 
@@ -226,11 +227,14 @@ Exer.return4 = function () {
 // argument.
 Exer.return5 = function () {
 
-  // Declare and initialize a variable for the first string.
+  
+  var x = strShift('abcABC123!@#');// Declare and initialize a variable for the first string.
 
+ var y = strShift(strShift('a S d F j K l'));
   // Declare and initialize a variable for the second string.
+  
 
-  // A return statement.
+ return strShuffle(x,y);// A return statement.
 
 };
 
@@ -240,6 +244,8 @@ Exer.return5 = function () {
 // Call prompt with the string and return the result.
 Exer.prompt1 = function () {
 
+  return prompt("What is the answer to the meaning of life, the universe, and everything?");
+
   // Your work here
 
 };
@@ -248,7 +254,7 @@ Exer.prompt1 = function () {
 // Call confirm with the string and return the result.
 Exer.confirm1 = function () {
 
-  // Your work here
+  return confirm("Imma let you finish, but Javascript is one of the best programming languages of all time...one of the best programming languages of all time!")// Your work here
 
 };
 
