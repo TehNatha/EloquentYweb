@@ -35,6 +35,7 @@ Exer.variables2 = function () {
 
   // Write a statement that declares a variable.
   // Write a statement to assign a number value to your variable.
+  var hi;
   var hi = 5;
 
   // Return the variable.
@@ -359,7 +360,7 @@ Exer.condition3 = function ( whatDay ) {
 
  } else if(whatDay === "Mannersday"){
 
-   return console.log(whatDay + 4);
+   return luckyNumber + 4;
 
  } else if(whatDay === "Foosday"){
 
@@ -392,25 +393,13 @@ Exer.condition4 = function () {
 
   // Prompt the user
   var number = prompt("Enter today's date, please.")
- /* if (isNaN(number)){
-    console.log('What do you think this is, bub? Wonderland?');
-  }else {
-
-    if(number < 1){
-      console.log('Negativelaaaaaaand~!');
-  }else if(number > 31){
-      console.log('Are they paying you overtime for this?');
-  }else if(number >= 29 || number <= 31){
-      console.log('I sure hope it isn\'t February.');
-  }else{
-    console.log("Did you know? There are exactly " + number + " ways to make today awesome!");
-  };
+  
   // If the user's input is not a number...
   // Otherwise...
     // If the user's input is less than 1...
     // If the user's input is greater than 31...
     // If the user's input between 29 and 31, inclusive...
-    // Otherwise...  */
+    // Otherwise...  
 
 };
 
@@ -573,15 +562,15 @@ Exer.breaking2 = function(theatre) {
 Exer.succinct1 = function ( kiwis ) {
 
   // Quadruple kiwis.
-
+  kiwis *= 4;
   // Reduce kiwis by 2.
-
+  kiwis -= 2;
   // Halve kiwis.
-
+  kiwis /= 2;
   // Concatenate " handsomely hirsute kiwis" to kiwis.
-
+  kiwis += ' handsomely hirsute kiwis';
   // Return kiwis.
-
+  return kiwis;
 };
 
 // Succinct 2
@@ -589,6 +578,8 @@ Exer.succinct1 = function ( kiwis ) {
 Exer.succinct2 = function () {
 
   for ( var hippo = 2; hippo <= 10; hippo += 1 ) {
+    hippo += "! " + hippo;
+    hippo += " fluttering hippos! ah ah ah ah ah!"
     console.log( hippo + "! " + hippo + " fluttering hippos! Ah ah ah ah ah!" );
   }
 
@@ -601,7 +592,7 @@ Exer.succinct3 = function () {
   var message = "Reverse me!";
   var pointer = message.length;
   while( pointer > 0 ) {
-    console.log( message.charAt( pointer-- ) );
+    console.log( message.charAt( --pointer ) );
   }
 
 };
@@ -624,6 +615,19 @@ Exer.switch1 = function ( animal ) {
     // "duck": "quux"
 
     // default: "ring-a-ding-ding-dingding-ding-a-ding-ding"
+    switch (animal) {
+      case "cow":
+      output += "foo";
+      break;
+      case "sheep":
+      output += "bar"
+      break;
+      case "duck":
+      output += "quux"
+      break;
+      default: 
+      output +="ring-a-ding-ding-dingding-ding-a-ding-ding";
+    }
 
   output += '"!';
   console.log( output );
@@ -635,11 +639,11 @@ Exer.switch1 = function ( animal ) {
 /* jshint ignore:start */
 Exer.capitalization1 = function() {
 
-  var ZeRo = 0;
-  var HAPPYCAT = new string("How did this get here! I'm not good at computer!");
-  for (var Index = 0; I < HAPPYCAT.Length; Index++) {
-    if (Index % 4 == ZeRo) {
-      Console.Log(HAPPYCAT);
+  var zero = 0;
+  var happyCat = new String("How did this get here! I'm not good at computer!");
+  for (var index = 0; I < happyCat.length; ndex++) {
+    if (index % 4 == zero) {
+      console.log(happyCat);
     }
   }
 
