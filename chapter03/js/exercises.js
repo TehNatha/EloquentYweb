@@ -55,16 +55,18 @@ function square(number){
 //     return the correct string, otherwise the other string.
 // `parameters1` should return `spaceCubeDetector`
 
-Exer.parameters1 = function spaceCubeDetector(length, width, height){
-		if(length === width === height){
+Exer.parameters1 = function (){
+	var spaceCubeDetector = function (length, width, height){
+		if(length === width && width === height){
 			return "SPACE CUBE DETECTED!!";
 		}else{
 			return "THIS IS NO SPACE CUBE!";
 		}
-		return spaceCubeDetector;
+	
+	};
 	
 
-
+	return spaceCubeDetector;
 
  };  // end Exer.parameters1
 
