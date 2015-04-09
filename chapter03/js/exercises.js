@@ -12,6 +12,9 @@ Exer.defining = function () {  // do not remove or alter
 /******************************    DEFINING 1    ******************************/
 // Use a function expression to define a function named `three`.
 // That function should return the value 3.
+var three = function(){
+	return 3;
+};
 
 
 
@@ -20,6 +23,9 @@ Exer.defining = function () {  // do not remove or alter
 // `myLog` should accept one parameter named `message`.
 // `myLog` should output `message` to the console with the appropriate
 //     formatting.
+function myLog(message){
+	return console.log(message);
+}
 
 
 
@@ -27,7 +33,9 @@ Exer.defining = function () {  // do not remove or alter
 // Use a function expression to define a function named `square`.
 // `square` should accept one parameter named `number`.
 // The function should square the number and both log and return the result.
-
+function square(number){
+	return console.log(number * number);
+}
 
 
 //==========================//
@@ -47,7 +55,14 @@ Exer.defining = function () {  // do not remove or alter
 //     return the correct string, otherwise the other string.
 // `parameters1` should return `spaceCubeDetector`
 
-Exer.parameters1 = function() {
+Exer.parameters1 = function spaceCubeDetector(length, width, height){
+		if(length === width === height){
+			return "SPACE CUBE DETECTED!!";
+		}else{
+			return "THIS IS NO SPACE CUBE!";
+		}
+		return spaceCubeDetector;
+	
 
 
 
@@ -112,23 +127,23 @@ Exer.scopeExample = function() {
 //  Write your answers in this section
 
 Exer.scope1 = function() {
-  return /* return value for Scope 1 */ ;
+  return /* return value for Scope 1 */ 5;
 };
 
 Exer.scope2 = function() {
-  return /* return value for Scope 2 */ ;
+  return /* return value for Scope 2 */ 35;
 };
 
 Exer.scope3 = function() {
-  return /* return value for Scope 3 */ ;
+  return /* return value for Scope 3 */ 7;
 };
 
 Exer.scope4 = function() {
-  return /* return value for Scope 4 */ ;
+  return /* return value for Scope 4 */ 35;
 };
 
 Exer.scope5 = function() {
-  return /* return value for Scope 5 */ ;
+  return /* return value for Scope 5 */ 11;
 };
 
 
@@ -209,58 +224,58 @@ Exer.nestExample = function() {
 //  Write your answers in this section.
 
 Exer.nest1 = function() {
-  return /* answer for Nest 1 */ ;
+  return /* answer for Nest 1 */ 2;
 };
 Exer.nest2 = function() {
-  return /* answer for Nest 2 */ ;
+  return /* answer for Nest 2 */ 5;
 };
 Exer.nest3 = function() {
-  return /* answer for Nest 3 */ ;
+  return /* answer for Nest 3 */ 7;
 };
 Exer.nest4 = function() {
-  return /* answer for Nest 4 */ ;
+  return /* answer for Nest 4 */ 11;
 };
 Exer.nest5 = function() {
-  return /* answer for Nest 5 */ ;
+  return /* answer for Nest 5 */ 7;
 };
 Exer.nest6 = function() {
-  return /* answer for Nest 6 */ ;
+  return /* answer for Nest 6 */ 11;
 };
 Exer.nest7 = function() {
-  return /* answer for Nest 7 */ ;
+  return /* answer for Nest 7 */ 7;
 };
 Exer.nest8 = function() {
-  return /* answer for Nest 8 */ ;
+  return /* answer for Nest 8 */ 2;
 };
 Exer.nest9 = function() {
-  return /* answer for Nest 9 */ ;
+  return /* answer for Nest 9 */ 17;
 };
 Exer.nest10 = function() {
-  return /* answer for Nest 10 */ ;
+  return /* answer for Nest 10 */ 17;
 };
 Exer.nest11 = function() {
-  return /* answer for Nest 11 */ ;
+  return /* answer for Nest 11 */ 13;
 };
 Exer.nest12 = function() {
-  return /* answer for Nest 12 */ ;
+  return /* answer for Nest 12 */ 13;
 };
 Exer.nest13 = function() {
-  return /* answer for Nest 13 */ ;
+  return /* answer for Nest 13 */ 0;
 };
 Exer.nest14 = function() {
-  return /* answer for Nest 14 */ ;
+  return /* answer for Nest 14 */ 0;
 };
 Exer.nest15 = function() {
-  return /* answer for Nest 15 */ ;
+  return /* answer for Nest 15 */ 0;
 };
 Exer.nest16 = function() {
-  return /* answer for Nest 16 */ ;
+  return /* answer for Nest 16 */ 5318008;
 };
 Exer.nest17 = function() {
-  return /* answer for Nest 17 */ ;
+  return /* answer for Nest 17 */ 11;
 };
 Exer.nest18 = function() {
-  return /* answer for Nest 18 */ ;
+  return /* answer for Nest 18 */ 2;
 };
 
 /*******************************************************************************
