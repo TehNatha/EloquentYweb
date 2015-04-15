@@ -5,7 +5,11 @@
 // evaluated value is not undefined.
 Exer.expressions1 = function () {
 
+<<<<<<< HEAD
   return /* your answer here */ (5 + 5);
+=======
+  return /* your answer here */ (5 + 5) + 5;
+>>>>>>> Byron6
 
 };
 
@@ -14,8 +18,13 @@ Exer.expressions1 = function () {
 Exer.statements1 = function () {
 
   // Write a statement that is not undefined.
+<<<<<<< HEAD
   1;
   
+=======
+  5*5;
+
+>>>>>>> Byron6
 };
 /* jshint ignore:end */
 
@@ -36,7 +45,11 @@ Exer.variables2 = function () {
   // Write a statement that declares a variable.
   // Write a statement to assign a number value to your variable.
   var hi;
+<<<<<<< HEAD
   var hi = 5;
+=======
+  hi = 5;
+>>>>>>> Byron6
 
   // Return the variable.
   return hi;
@@ -233,7 +246,11 @@ Exer.return3 = function () {
 Exer.return4 = function () {
  
   // your work goes here
+<<<<<<< HEAD
         console.log(magicFunc() + magicFunc());
+=======
+        console.log("" + magicFunc() + magicFunc());
+>>>>>>> Byron6
 
 
 };
@@ -313,6 +330,14 @@ Exer.control2 = function ( bar ) {
 Exer.condition1 = function ( isSerious ) {
   // If `isSerious` is false, output the message:
   //     On second thoughts, let's not go to Camelot. It is a silly place.
+  console.log("Welcome to Camelot!")
+
+    if(isSerious === false){
+
+      console.log("On second thoughts, let's not go to Camelot. It is a silly place.");
+
+    }
+  
 
     if(isSerious === false){
 
@@ -333,7 +358,11 @@ Exer.condition2 = function ( temperature ) {
 
   }else {
     console.log("Catch of the day: influenza, $14/lb.");
+<<<<<<< HEAD
   };
+=======
+  }
+>>>>>>> Byron6
   // Then output:
   //     Hermit crab warning!
 
@@ -356,9 +385,16 @@ Exer.condition3 = function ( whatDay ) {
  var luckyNumber = 7;
  if(whatDay.length <= 6) {
 
+<<<<<<< HEAD
    return luckyNumber + "!";
 
  } else if(whatDay === "Mannersday"){
+=======
+    luckyNumber += "!";
+
+ }
+  if(whatDay === "Mannersday"){
+>>>>>>> Byron6
 
    return luckyNumber + 4;
 
@@ -368,11 +404,19 @@ Exer.condition3 = function ( whatDay ) {
 
 } else if(whatDay === "Heyday"){
 
+<<<<<<< HEAD
  return luckyNumber + "l";
 
 } else {
 
   return luckyNumber === Infinity;
+=======
+ return luckyNumber + 7;
+
+} else if(whatDay === "Moop") {
+
+  return Infinity;
+>>>>>>> Byron6
 
 }
 
@@ -395,6 +439,23 @@ Exer.condition4 = function () {
   var number = prompt("Enter today's date, please.")
   
   // If the user's input is not a number...
+  if (isNaN(number)) {
+    console.log("What do you think this is, bub? Wonderland?")
+  } else {
+    if(number < 1){
+      console.log('Negativelaaaaaaand~!');
+    }
+    else if(number > 31){
+      console.log('Are they paying you overtime for this?');
+    }
+    else if(number >= 29 && number <= 31){
+      console.log("I sure hope it isn't February.");
+    }else{
+      console.log('Did you know? There are exactly ' + number + ' ways to make today awesome!');
+    }
+  };
+  
+
   // Otherwise...
     // If the user's input is less than 1...
     // If the user's input is greater than 31...
@@ -434,14 +495,22 @@ Exer.while2 = function () {
 // Turn the code in the function into a single do while loop.
 // Hint: 0, 1, and 2 are remainders from dividing numbers by 3.
 Exer.doWhile1 = function () {
+<<<<<<< HEAD
   /*var i = 3;
+=======
+  var i = 3;
+>>>>>>> Byron6
   do {
     var results = i%3;
     i++;
     console.log(results);
   } while(i < 9);
 
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> Byron6
 };
 
 /* jshint ignore:start */
@@ -466,8 +535,14 @@ Exer.doWhile2 = function () {
 Exer.indenting1 = function() {
   var firstName = "Zachery"; 
   var lastName = "Moneypenny"; 
+<<<<<<< HEAD
     if(firstName === "Zachery") {
       lastName = "Johnson"; }
+=======
+  if(firstName === "Zachery") {
+    lastName = "Johnson"; 
+  }
+>>>>>>> Byron6
 };
 
 // Indenting 2
@@ -475,8 +550,14 @@ Exer.indenting1 = function() {
 Exer.indenting2 = function() {
     var firstName = "Penny"; 
     var lastName = "Moneywhistle"; 
+<<<<<<< HEAD
         if(firstName === "Penny") { 
             lastName = "Johnson"; }
+=======
+    if(firstName === "Penny") { 
+        lastName = "Johnson"; 
+    }
+>>>>>>> Byron6
 };
 
 /*-----------------------------    FOR LOOPS    ------------------------------*/
@@ -485,13 +566,12 @@ Exer.indenting2 = function() {
 // Rewrite the loop as a linear sequence of statements.
 Exer.for1 = function () {
 
-  var scream;
-  for ( scream = "..." ; scream.length < 28; scream += "AA" ) {
-    console.log( scream );
-    scream = "    " + scream;
-  }
-  scream += "H!"
-  console.log( scream );
+  console.log( '...' );
+  console.log( '    ...AA' );
+  console.log( '        ...AAAA' );
+  console.log( '            ...AAAAAA' );
+  console.log( '                ...AAAAAAAA' );
+  console.log( '                    ...AAAAAAAAAAH!' );
 
 };
 
@@ -500,16 +580,13 @@ Exer.for1 = function () {
 // Rewrite the repetative code with for loops.
 Exer.for2 = function () {
 
-  console.log( "Hi!" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "Slim Shady" );
-  console.log( "Hi!" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "Slim Shady" );
+  for ( var i = 0; i < 2; i++) {
+    console.log( "Hi!" );
+    for(var x = 0; x < 3; x++){
+    console.log( "My name is" );
+}
+    console.log( "Slim Shady" );
+  }
 
 };
 /* jshint ignore:end */
@@ -522,9 +599,15 @@ Exer.for3 = function () {
   // Your work here
   for(i = 20; i > 4; i--){
     if(i%2 === 0){
+<<<<<<< HEAD
       console.log(i + "even");
     }else{
       console.log(i + "odd");
+=======
+      console.log(i, "even");
+    }else{
+      console.log(i, "odd");
+>>>>>>> Byron6
     };
   };
 
@@ -537,13 +620,14 @@ Exer.for3 = function () {
 Exer.breaking1 = function(yeng) {
 
   while(yeng()) {
+    break;
 
   }
 
 };
 
 // Breaking 2
-// Every time theatre.next() is called it returns a string, break when that string is
+// Every time theatre.current() is called it returns a string, break when that string is
 // "Electric Boogaloo!"
 Exer.breaking2 = function(theatre) {
 
@@ -577,9 +661,13 @@ Exer.succinct1 = function ( kiwis ) {
 // Edit the for loop to use the incrementation operator.
 Exer.succinct2 = function () {
 
+<<<<<<< HEAD
   for ( var hippo = 2; hippo <= 10; hippo += 1 ) {
     hippo += "! " + hippo;
     hippo += " fluttering hippos! ah ah ah ah ah!"
+=======
+ for ( var hippo = 2; hippo <= 10; hippo++ ) {
+>>>>>>> Byron6
     console.log( hippo + "! " + hippo + " fluttering hippos! Ah ah ah ah ah!" );
   }
 
@@ -656,9 +744,10 @@ Exer.comments1 = function ( war, missiles, wood, sheep, brick ) {
 
   if ( war ) {
     if ( missiles ) {
-      missiles.launch();
+     // missiles.launch();
     } else {
       cower();
+      // we will now ever cower, we will take over the wheat fields!
     }
   } else {
     if ( wood ) {
@@ -667,6 +756,7 @@ Exer.comments1 = function ( war, missiles, wood, sheep, brick ) {
       sheep.trade( wood, 3 );
     } else {
       brick.buy(2);
+      //those bandits! will never get my bricks!
     }
   }
 
@@ -674,6 +764,96 @@ Exer.comments1 = function ( war, missiles, wood, sheep, brick ) {
 
 Exer.comments2 = function () {
 
-  // your work here
 
+/* ___________________▄▄▄▀▀▀▀▀▀▀▄
+ _______________▄▀▀____▀▀▀▀▄____█
+ ___________▄▀▀__▀▀▀▀▀▀▄___▀▄___█
+ __________█▄▄▄▄▄▄_______▀▄__▀▄__█
+ _________█_________▀▄______█____█_█
+ ______▄█_____________▀▄_____▐___▐_▌
+ ______██_______________▀▄___▐_▄▀▀▀▄
+ ______█________██_______▌__▐▄▀______█
+ ______█_________█_______▌__▐▐________▐
+ _____▐__________▌_____▄▀▀▀__▌_______▐_____________▄▄▄▄▄▄
+ ______▌__________▀▀▀▀________▀▀▄▄▄▀______▄▄████▓▓▓▓▓▓▓███▄
+ ______▌____________________________▄▀__▄▄█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▄
+ ______▐__________________________▄▀_▄█▓▓▓▓▓▓▓▓▓▓_____▓▓____▓▓█▄
+ _______▌______________________▄▀_▄█▓▓▓▓▓▓▓▓▓▓▓____▓▓_▓▓_▓▓__▓▓█
+ _____▄▀▄_________________▄▀▀▌██▓▓▓▓▓▓▓▓▓▓▓▓▓__▓▓▓___▓▓_▓▓__▓▓█
+ ____▌____▀▀▀▄▄▄▄▄▄▄▄▀▀___▌█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓__▓________▓▓___▓▓▓█
+ _____▀▄_________________▄▀▀▓▓▓▓▓▓▓▓█████████████▄▄_____▓▓__▓▓▓█
+ _______█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓▓▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▄▄___▓▓▓▓▓█
+ _______█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓███▓▓▓▓████▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▓▓▓▓█
+ ________█▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓█▓▓██░░███████░██▓▓▓▓▓▓▓▓▓▓██▓▓▓▓▓█
+ ________█▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓░░░░░█░░░░░██░░░░██▓▓▓▓▓▓▓▓▓██▓▓▓▓▌
+ ________█▓▓▓▓▓▓▓▓▓▓▓▓▓▓███░░░░░░░░____░██░░░░░░░██▓▓▓▓▓▓▓██▓▓▌
+ ________▐▓▓▓▓▓▓▓▓▓▓▓▓▓▓██░░░░░░░________░░░░░░░░░██████▓▓▓▓▓█▓▌
+ ________▐▓▓▓▓▓▓▓▓▓▓▓▓▓▓██░░░░░░___▓▓▓▓▓░░░░░░░███░░███▓▓▓▓▓█▓▌
+ _________█▓▓▓▓▓▓▓▓▓▓▓▓▓██░░░░░___▓▓█▄▄▓░░░░░░░___░░░░█▓▓▓▓▓█▓▌
+ _________█▓▓▓▓▓▓▓▓▓▓▓▓▓█░░█░░░___▓▓██░░░░░░░░▓▓▓▓__░░░░█▓▓▓▓██
+ _________█▓▓▓▓▓▓▓▓▓▓▓▓▓█░███░░____▓░░░░░░░░░░░█▄█▓__░░░░█▓▓█▓█
+ _________▐▓▓▓▓▓▓▓▓▓▓▓▓▓█░█████░░░░░░░░░░░░░░░░░█▓__░░░░███▓█
+ __________█▓▓▓▓▓▓▓▓▓▓▓▓█░░███████░░░░░░░░░░░░░░░▓_░░░░░██▓█
+ __________█▓▓▓▓▓▓▓▓▓▓▓▓█░░░███████░░░░░░░░░░░░░░_░░░░░██▓█
+ __________█▓▓▓▓▓▓▓▓▓▓▓▓█░░░███████░░░░░░░░░░░░░░░░░░░██▓█
+ ___________█▓▓▓▓▓▓▓▓▓▓▓▓█░░░░███████░░░░░░░░░░░█████░██░░░
+ ___________█▓▓▓▓▓▓▓▓▓▓▓▓█░░░░░░__███████░░░░░███████░░█░░░░
+ ___________█▓▓▓▓▓▓▓▓▓▓▓▓▓█░░░░░░█▄▄▄▀▀▀▀████████████░░█░░░░
+ ___________▐▓▓▓▓▓▓▓▓▓▓▓▓█░░░░░░██████▄__▀▀░░░███░░░░░█░░░
+ ___________▐▓▓▓▓▓▓▓▓▓▓▓█▒█░░░░░░▓▓▓▓▓███▄░░░░░░░░░░░░░░░______▄▄▄
+ ___________█▓▓▓▓▓▓▓▓▓█▒▒▒▒█░░░░░░▓▓▓▓▓█░░░░░░░░░░░░░░░▄▄▄_▄▀▀____▀▄
+ __________█▓▓▓▓▓▓▓▓▓█▒▒▒▒█▓▓░░░░░░░░░░░░░░░░░░░░░____▄▀____▀▄_________▀▄
+ _________█▓▓▓▓▓▓▓▓▓█▒▒▒▒█▓▓▓▓░░░░░░░░░░░░░░░░░______▐▄________█▄▄▀▀▀▄__█
+ ________█▓▓▓▓▓▓▓▓█▒▒▒▒▒▒█▓▓▓▓▓▓▓░░░░░░░░░____________█_█______▐_________▀▄▌
+ _______█▓▓▓▓▓▓▓▓█▒▒▒▒▒▒███▓▓▓▓▓▓▓▓▓▓▓█▒▒▄___________█__▀▄____█____▄▄▄____▐
+ ______█▓▓▓▓▓▓▓█_______▒▒█▒▒██▓▓▓▓▓▓▓▓▓▓█▒▒▒▄_________█____▀▀█▀▄▀▀▀___▀▀▄▄▐
+ _____█▓▓▓▓▓██▒_________▒█▒▒▒▒▒███▓▓▓▓▓▓█▒▒▒██________▐_______▀█_____________█
+ ____█▓▓████▒█▒_________▒█▒▒▒▒▒▒▒▒███████▒▒▒▒██_______█_______▐______▄▄▄_____█
+ __█▒██▒▒▒▒▒▒█▒▒____▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒____▒█▓█__▄█__█______▀▄▄▀▀____▀▀▄▄█
+ __█▒▒▒▒▒▒▒▒▒▒█▒▒▒████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█_______█▓▓█▓▓▌_▐________▐____________▐
+ __█▒▒▒▒▒▒▒▒▒▒▒███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒_______█▓▓▓█▓▌__▌_______▐_____▄▄____▐
+ _█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒_____█▓▓▓█▓▓▌__▌_______▀▄▄▀______▐
+ _█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███████▓▓█▓▓▓▌__▀▄_______________▄▀
+ _█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███▒▒▒▒▒▒▒██▓▓▓▓▓▌___▀▄_________▄▀▀
+ █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▒▒▒▒▒▒▒▒▒▒▒▒▒█▓▓▓▓▓▀▄__▀▄▄█▀▀▀
+ █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓██▄▄▄▀
+ █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████
+ █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+ _█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▄▄▄▄▄
+ _█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███▒▒▒▒▒▒██▄▄
+ __█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒███▒▒▒▒▒▒▒▒▒▒▒▒▒█▄
+ __█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+ __█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒█▒▒▒▒▒▒▒▒▒██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+ ___█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒█▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▒▒▌
+ ____█▒▒▒▒▒▒▒▒▒▒▒▒▒██▒▒▒▒▒▒▒█▒▒▒▒█▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░▒▒▌
+ ____█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████████████▒▒▒▒▒█▒▒▒▒▒▒▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒░▒▌
+ _____█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█_______▐▒▒▒▒█▒▒▒▒▒▒▒░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▌
+ ______█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█________█▒▒█▒▒▒▒▒▒░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▌
+ _______█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█________█▒█▒▒▒▒▒▒░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▌
+ ________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█________█▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+ _________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█________█▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+ _________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█________█▒▒▒░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▀
+ __________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█_______█▒░░░▒▒▒▒▒░░░░░░░░▒▒▒█▀▀▀
+ ___________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█_______█░▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░█▀
+ ____________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█_______█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▀
+ _____________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█_______█▒▒▒▒▒▒▒▒▒▒▒▒█▀
+ _____________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█_______▀▀▀███████▀▀
+ ______________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+ _______________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+ ________________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+ _________________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+ __________________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▒█
+ ___________________█▒▒▒▒▒▒▒▒▒▒▒▒▒██▒▒▒▒█
+ ___________________█▒▒▒▒▒▒▒▒████▒▒▒▒▒▒▒█
+ ___________________█████████▒▒▒▒▒▒▒▒▒▒▒█
+ ____________________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+ ____________________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+ _____________________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▌
+ _____________________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▌
+ ______________________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░▌
+ _______________________█▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░█
+ ________________________█▒▒▒▒▒▒▒▒▒▒▒░░░█
+ __________________________██▒▒▒▒▒▒░░░█▀
+ _____________________________█░░░░░█▀
+ _______________________________▀▀▀▀*/
 };

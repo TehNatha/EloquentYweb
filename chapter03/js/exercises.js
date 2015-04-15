@@ -12,6 +12,9 @@ Exer.defining = function () {  // do not remove or alter
 /******************************    DEFINING 1    ******************************/
 // Use a function expression to define a function named `three`.
 // That function should return the value 3.
+var three = function(){
+	return 3;
+};
 
 
 
@@ -20,6 +23,9 @@ Exer.defining = function () {  // do not remove or alter
 // `myLog` should accept one parameter named `message`.
 // `myLog` should output `message` to the console with the appropriate
 //     formatting.
+ var myLog = function (message){
+	return console.log('The Log Says: ' + message);
+};
 
 
 
@@ -27,7 +33,11 @@ Exer.defining = function () {  // do not remove or alter
 // Use a function expression to define a function named `square`.
 // `square` should accept one parameter named `number`.
 // The function should square the number and both log and return the result.
-
+var square = function (number){
+  var result = number * number;
+  console.log(result);
+  return result;
+};
 
 
 //==========================//
@@ -40,34 +50,51 @@ Exer.defining = function () {  // do not remove or alter
 ^^^^^^^^^^^^^^^^^^^^^^^^^    Parameters and Scopes    ^^^^^^^^^^^^^^^^^^^^^^^^^^
 *******************************************************************************/
 
-//===============================//
-Exer.parameters1 = function() {  //
-//===============================//
 /*****************************    Parameters 1    *****************************/
-// Create a function named spaceCubeDetector that ccepts a length, width, and a
-//     height.
-// When its length, width, and height are all equal, it should return the
-//    correct string, otherwise the other string.
+// Inside `Exer.parameters1` create a function named `spaceCubeDetector` that
+//     accepts a length, width, and a height.
+// When its length, width, and height are all equal, `spaceCubeDetector` should
+//     return the correct string, otherwise the other string.
+// `parameters1` should return `spaceCubeDetector`
+
+Exer.parameters1 = function (){
+	var spaceCubeDetector = function (length, width, height){
+		if(length === width && width === height){
+			return "SPACE CUBE DETECTED!!";
+		}else{
+			return "THIS IS NO SPACE CUBE!";
+		}
+	
+	};
+	
+
+	return spaceCubeDetector;
+
+ };  // end Exer.parameters1
 
 
 
- };  // wrapper end
 
+/*****************************    Parameters 2    *****************************/
+// Given spaceCubeDetector:
+// Run it once with a length of 3, width of 5, and height of 3.14159265359
+//     and log its return value.
+// Run it once with a length of 7, width of 7, and height of 7 and log its
+//     return value.
+// Run it once with a length of 1, width of 2, and height of 3 and log its
+//    return value.
 //================================================//
 Exer.parameters2 = function(spaceCubeDetector) {  //
 //================================================//
-/*****************************    Parameters 2    *****************************/
-// Given spaceCubeDetector:
-// 1. Run it once with a length of 3, width of 5, and height of 3.14159265359
-//    and log its return.
-// 2. Run it once with a length of 7, width of 7, and height of 7 and log its
-//    return.
-// 3. Run it once with a length of 1, width of 2, and height of 3 and log its
-//    return.
+console.log(spaceCubeDetector(3, 5, 3.14159265359));
+console.log(spaceCubeDetector(7, 7, 7));
+console.log(spaceCubeDetector(1, 2, 3));
 
 
 
 };  // wrapper end
+
+
 
 //===============================    SCOPE    ================================//
 //  For Scope exercises 1-5, read through the following code and find the     //
@@ -107,23 +134,23 @@ Exer.scopeExample = function() {
 //  Write your answers in this section
 
 Exer.scope1 = function() {
-  return /* return value for Scope 1 */ ;
+  return /* return value for Scope 1 */ 5;
 };
 
 Exer.scope2 = function() {
-  return /* return value for Scope 2 */ ;
+  return /* return value for Scope 2 */ 35;
 };
 
 Exer.scope3 = function() {
-  return /* return value for Scope 3 */ ;
+  return /* return value for Scope 3 */ 7;
 };
 
 Exer.scope4 = function() {
-  return /* return value for Scope 4 */ ;
+  return /* return value for Scope 4 */ 7;
 };
 
 Exer.scope5 = function() {
-  return /* return value for Scope 5 */ ;
+  return /* return value for Scope 5 */ 35;
 };
 
 
@@ -192,7 +219,7 @@ Exer.nestExample = function() {
   console.log(bar); // Nest 2: What value of bar is logged?
   console.log(quux); // Nest 3: What value of quux is logged?
 
-  nest(5318008);
+  nest(19);
 
   console.log(foo); // Nest 16: What value of foo is logged?
   console.log(bar); // Nest 17: What value of bar is logged?
@@ -204,61 +231,63 @@ Exer.nestExample = function() {
 //  Write your answers in this section.
 
 Exer.nest1 = function() {
-  return /* answer for Nest 1 */ ;
+  return /* answer for Nest 1 */ 2;
 };
 Exer.nest2 = function() {
-  return /* answer for Nest 2 */ ;
+  return /* answer for Nest 2 */ 5;
 };
 Exer.nest3 = function() {
-  return /* answer for Nest 3 */ ;
+  return /* answer for Nest 3 */ 7;
 };
 Exer.nest4 = function() {
-  return /* answer for Nest 4 */ ;
+  return /* answer for Nest 4 */ 11;
 };
 Exer.nest5 = function() {
-  return /* answer for Nest 5 */ ;
+  return /* answer for Nest 5 */ 7;
 };
 Exer.nest6 = function() {
-  return /* answer for Nest 6 */ ;
+  return /* answer for Nest 6 */ 11;
 };
 Exer.nest7 = function() {
-  return /* answer for Nest 7 */ ;
+  return /* answer for Nest 7 */ 7;
 };
 Exer.nest8 = function() {
-  return /* answer for Nest 8 */ ;
+  return /* answer for Nest 8 */ 17;
 };
 Exer.nest9 = function() {
-  return /* answer for Nest 9 */ ;
+  return /* answer for Nest 9 */ 17;
 };
 Exer.nest10 = function() {
-  return /* answer for Nest 10 */ ;
+  return /* answer for Nest 10 */ 17;
 };
 Exer.nest11 = function() {
-  return /* answer for Nest 11 */ ;
+  return /* answer for Nest 11 */ 13;
 };
 Exer.nest12 = function() {
-  return /* answer for Nest 12 */ ;
+  return /* answer for Nest 12 */ 13;
 };
 Exer.nest13 = function() {
-  return /* answer for Nest 13 */ ;
+  return /* answer for Nest 13 */ 0;
 };
 Exer.nest14 = function() {
-  return /* answer for Nest 14 */ ;
+  return /* answer for Nest 14 */ 0;
 };
 Exer.nest15 = function() {
-  return /* answer for Nest 15 */ ;
+  return /* answer for Nest 15 */ 0;
 };
 Exer.nest16 = function() {
-  return /* answer for Nest 16 */ ;
+  return /* answer for Nest 16 */ 2;
 };
 Exer.nest17 = function() {
-  return /* answer for Nest 17 */ ;
+  return /* answer for Nest 17 */ 5;
 };
 Exer.nest18 = function() {
-  return /* answer for Nest 18 */ ;
+  return /* answer for Nest 18 */ 0;
 };
 
-/*************************    Functions as Values    **************************/
+/*******************************************************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^    Functions as Values    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*******************************************************************************/
 // Nate
 
 /*************************    Declaration Notation    *************************/
