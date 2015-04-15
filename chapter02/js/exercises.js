@@ -5,11 +5,8 @@
 // evaluated value is not undefined.
 Exer.expressions1 = function () {
 
-<<<<<<< HEAD
-  return /* your answer here */ (5 + 5);
-=======
   return /* your answer here */ (5 + 5) + 5;
->>>>>>> Byron6
+
 
 };
 
@@ -18,13 +15,9 @@ Exer.expressions1 = function () {
 Exer.statements1 = function () {
 
   // Write a statement that is not undefined.
-<<<<<<< HEAD
-  1;
-  
-=======
+
   5*5;
 
->>>>>>> Byron6
 };
 /* jshint ignore:end */
 
@@ -45,11 +38,7 @@ Exer.variables2 = function () {
   // Write a statement that declares a variable.
   // Write a statement to assign a number value to your variable.
   var hi;
-<<<<<<< HEAD
-  var hi = 5;
-=======
   hi = 5;
->>>>>>> Byron6
 
   // Return the variable.
   return hi;
@@ -246,11 +235,7 @@ Exer.return3 = function () {
 Exer.return4 = function () {
  
   // your work goes here
-<<<<<<< HEAD
-        console.log(magicFunc() + magicFunc());
-=======
         console.log("" + magicFunc() + magicFunc());
->>>>>>> Byron6
 
 
 };
@@ -331,12 +316,6 @@ Exer.condition1 = function ( isSerious ) {
   // If `isSerious` is false, output the message:
   //     On second thoughts, let's not go to Camelot. It is a silly place.
   console.log("Welcome to Camelot!")
-
-    if(isSerious === false){
-
-      console.log("On second thoughts, let's not go to Camelot. It is a silly place.");
-
-    }
   
 
     if(isSerious === false){
@@ -358,11 +337,7 @@ Exer.condition2 = function ( temperature ) {
 
   }else {
     console.log("Catch of the day: influenza, $14/lb.");
-<<<<<<< HEAD
-  };
-=======
   }
->>>>>>> Byron6
   // Then output:
   //     Hermit crab warning!
 
@@ -384,17 +359,10 @@ Exer.condition3 = function ( whatDay ) {
 
  var luckyNumber = 7;
  if(whatDay.length <= 6) {
-
-<<<<<<< HEAD
-   return luckyNumber + "!";
-
- } else if(whatDay === "Mannersday"){
-=======
     luckyNumber += "!";
 
  }
   if(whatDay === "Mannersday"){
->>>>>>> Byron6
 
    return luckyNumber + 4;
 
@@ -404,19 +372,11 @@ Exer.condition3 = function ( whatDay ) {
 
 } else if(whatDay === "Heyday"){
 
-<<<<<<< HEAD
- return luckyNumber + "l";
-
-} else {
-
-  return luckyNumber === Infinity;
-=======
  return luckyNumber + 7;
 
 } else if(whatDay === "Moop") {
 
   return Infinity;
->>>>>>> Byron6
 
 }
 
@@ -495,22 +455,13 @@ Exer.while2 = function () {
 // Turn the code in the function into a single do while loop.
 // Hint: 0, 1, and 2 are remainders from dividing numbers by 3.
 Exer.doWhile1 = function () {
-<<<<<<< HEAD
-  /*var i = 3;
-=======
-  var i = 3;
->>>>>>> Byron6
+  var i = 0;
   do {
     var results = i%3;
     i++;
     console.log(results);
-  } while(i < 9);
+  } while(i < 6);
 
-<<<<<<< HEAD
-*/
-=======
-
->>>>>>> Byron6
 };
 
 /* jshint ignore:start */
@@ -535,29 +486,19 @@ Exer.doWhile2 = function () {
 Exer.indenting1 = function() {
   var firstName = "Zachery"; 
   var lastName = "Moneypenny"; 
-<<<<<<< HEAD
-    if(firstName === "Zachery") {
-      lastName = "Johnson"; }
-=======
   if(firstName === "Zachery") {
     lastName = "Johnson"; 
   }
->>>>>>> Byron6
 };
 
 // Indenting 2
 // Correctly indent the following code block using FOUR spaces for each block
 Exer.indenting2 = function() {
     var firstName = "Penny"; 
-    var lastName = "Moneywhistle"; 
-<<<<<<< HEAD
-        if(firstName === "Penny") { 
-            lastName = "Johnson"; }
-=======
+    var lastName = "Moneywhistle";
     if(firstName === "Penny") { 
         lastName = "Johnson"; 
     }
->>>>>>> Byron6
 };
 
 /*-----------------------------    FOR LOOPS    ------------------------------*/
@@ -597,17 +538,11 @@ Exer.for2 = function () {
 Exer.for3 = function () {
 
   // Your work here
-  for(i = 20; i > 4; i--){
+  for(var i = 20; i >= 5; i--){
     if(i%2 === 0){
-<<<<<<< HEAD
-      console.log(i + "even");
-    }else{
-      console.log(i + "odd");
-=======
       console.log(i, "even");
     }else{
       console.log(i, "odd");
->>>>>>> Byron6
     };
   };
 
@@ -661,13 +596,7 @@ Exer.succinct1 = function ( kiwis ) {
 // Edit the for loop to use the incrementation operator.
 Exer.succinct2 = function () {
 
-<<<<<<< HEAD
-  for ( var hippo = 2; hippo <= 10; hippo += 1 ) {
-    hippo += "! " + hippo;
-    hippo += " fluttering hippos! ah ah ah ah ah!"
-=======
- for ( var hippo = 2; hippo <= 10; hippo++ ) {
->>>>>>> Byron6
+  for ( var hippo = 2; hippo <= 10; hippo++ ) {
     console.log( hippo + "! " + hippo + " fluttering hippos! Ah ah ah ah ah!" );
   }
 
