@@ -326,13 +326,6 @@ Exer.condition1 = function ( isSerious ) {
     };
   
 
-    if(isSerious === false){
-
-      console.log(" On second thoughts, let's not go to Camelot. It is a silly place.");
-
-    };
-  
-
 };
 
 // Conditional 2
