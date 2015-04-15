@@ -14,8 +14,8 @@ Exer.expressions1 = function () {
 Exer.statements1 = function () {
 
   // Write a statement that is not undefined.
-  "a longer stamement" + "an even longer statement";
-  
+  5*5;
+
 };
 /* jshint ignore:end */
 
@@ -401,17 +401,17 @@ Exer.condition4 = function () {
     console.log("What do you think this is, bub? Wonderland?")
   } else {
     if(number < 1){
-
+      console.log('Negativelaaaaaaand~!');
     }
-    if(number > 31){
-
+    else if(number > 31){
+      console.log('Are they paying you overtime for this?');
     }
-    if(number >= 29 || number <= 31){
-
+    else if(number >= 29 && number <= 31){
+      console.log("I sure hope it isn't February.");
     }else{
-      console.log('Did you know? There are exactly ' + number + ' ways to make today awesome!')
+      console.log('Did you know? There are exactly ' + number + ' ways to make today awesome!');
     }
-  }
+  };
   
 
   // Otherwise...
@@ -485,8 +485,9 @@ Exer.doWhile2 = function () {
 Exer.indenting1 = function() {
   var firstName = "Zachery"; 
   var lastName = "Moneypenny"; 
-    if(firstName === "Zachery") {
-    lastName = "Johnson"; }
+  if(firstName === "Zachery") {
+    lastName = "Johnson"; 
+  }
 };
 
 // Indenting 2
@@ -494,8 +495,9 @@ Exer.indenting1 = function() {
 Exer.indenting2 = function() {
     var firstName = "Penny"; 
     var lastName = "Moneywhistle"; 
-        if(firstName === "Penny") { 
-            lastName = "Johnson"; }
+    if(firstName === "Penny") { 
+        lastName = "Johnson"; 
+    }
 };
 
 /*-----------------------------    FOR LOOPS    ------------------------------*/
@@ -504,13 +506,12 @@ Exer.indenting2 = function() {
 // Rewrite the loop as a linear sequence of statements.
 Exer.for1 = function () {
 
-   var scream = "    "
-  console.log("...");
-  console.log(scream + "..." + "AA");
-  console.log(scream + scream + "..." + "AAAA");
-  console.log(scream + scream + scream + "..." + "AAAAAA");
-  console.log(scream + scream + scream + scream + "..." + "AAAAAAAA");
-  console.log(scream + scream + scream + scream + scream + "..." + "AAAAAAAAH!");
+  console.log( '...' );
+  console.log( '    ...AA' );
+  console.log( '        ...AAAA' );
+  console.log( '            ...AAAAAA' );
+  console.log( '                ...AAAAAAAA' );
+  console.log( '                    ...AAAAAAAAAAH!' );
 
 };
 
@@ -519,16 +520,13 @@ Exer.for1 = function () {
 // Rewrite the repetative code with for loops.
 Exer.for2 = function () {
 
-  console.log( "Hi!" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "Slim Shady" );
-  console.log( "Hi!" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "Slim Shady" );
+  for ( var i = 0; i < 2; i++) {
+    console.log( "Hi!" );
+    for(var x = 0; x < 3; x++){
+    console.log( "My name is" );
+}
+    console.log( "Slim Shady" );
+  }
 
 };
 /* jshint ignore:end */
@@ -541,9 +539,9 @@ Exer.for3 = function () {
   // Your work here
   for(i = 20; i > 4; i--){
     if(i%2 === 0){
-      console.log(i + "even");
+      console.log(i, "even");
     }else{
-      console.log(i + "odd");
+      console.log(i, "odd");
     };
   };
 
@@ -597,9 +595,7 @@ Exer.succinct1 = function ( kiwis ) {
 // Edit the for loop to use the incrementation operator.
 Exer.succinct2 = function () {
 
-  for ( var hippo = 2; hippo <= 10; hippo += 1 ) {
-    hippo += "! " + hippo;
-    hippo += " fluttering hippos! ah ah ah ah ah!"
+ for ( var hippo = 2; hippo <= 10; hippo++ ) {
     console.log( hippo + "! " + hippo + " fluttering hippos! Ah ah ah ah ah!" );
   }
 
@@ -688,7 +684,7 @@ Exer.comments1 = function ( war, missiles, wood, sheep, brick ) {
       sheep.trade( wood, 3 );
     } else {
       brick.buy(2);
-      //those bandits will never get my bricks!
+      //those bandits! will never get my bricks!
     }
   }
 
@@ -696,7 +692,7 @@ Exer.comments1 = function ( war, missiles, wood, sheep, brick ) {
 
 Exer.comments2 = function () {
 
-  // your work here
+
 /* ___________________▄▄▄▀▀▀▀▀▀▀▄
  _______________▄▀▀____▀▀▀▀▄____█
  ___________▄▀▀__▀▀▀▀▀▀▄___▀▄___█

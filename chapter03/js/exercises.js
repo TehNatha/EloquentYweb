@@ -23,9 +23,9 @@ var three = function(){
 // `myLog` should accept one parameter named `message`.
 // `myLog` should output `message` to the console with the appropriate
 //     formatting.
-function myLog(message){
-	return console.log(message);
-}
+ var myLog = function (message){
+	return console.log('The Log Says: ' + message);
+};
 
 
 
@@ -33,9 +33,11 @@ function myLog(message){
 // Use a function expression to define a function named `square`.
 // `square` should accept one parameter named `number`.
 // The function should square the number and both log and return the result.
-function square(number){
-	return console.log(number * number);
-}
+var square = function (number){
+  var result = number * number;
+  console.log(result);
+  return result;
+};
 
 
 //==========================//
@@ -84,6 +86,9 @@ Exer.parameters1 = function (){
 //================================================//
 Exer.parameters2 = function(spaceCubeDetector) {  //
 //================================================//
+console.log(spaceCubeDetector(3, 5, 3.14159265359));
+console.log(spaceCubeDetector(7, 7, 7));
+console.log(spaceCubeDetector(1, 2, 3));
 
 
 
@@ -141,11 +146,11 @@ Exer.scope3 = function() {
 };
 
 Exer.scope4 = function() {
-  return /* return value for Scope 4 */ 35;
+  return /* return value for Scope 4 */ 7;
 };
 
 Exer.scope5 = function() {
-  return /* return value for Scope 5 */ 11;
+  return /* return value for Scope 5 */ 35;
 };
 
 
@@ -247,7 +252,7 @@ Exer.nest7 = function() {
   return /* answer for Nest 7 */ 7;
 };
 Exer.nest8 = function() {
-  return /* answer for Nest 8 */ 2;
+  return /* answer for Nest 8 */ 17;
 };
 Exer.nest9 = function() {
   return /* answer for Nest 9 */ 17;
@@ -271,13 +276,13 @@ Exer.nest15 = function() {
   return /* answer for Nest 15 */ 0;
 };
 Exer.nest16 = function() {
-  return /* answer for Nest 16 */ 5318008;
+  return /* answer for Nest 16 */ 2;
 };
 Exer.nest17 = function() {
-  return /* answer for Nest 17 */ 11;
+  return /* answer for Nest 17 */ 5;
 };
 Exer.nest18 = function() {
-  return /* answer for Nest 18 */ 2;
+  return /* answer for Nest 18 */ 0;
 };
 
 /*******************************************************************************
