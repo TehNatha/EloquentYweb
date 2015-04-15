@@ -140,6 +140,7 @@ Exer.environment1 = function () {
 // "lime".
 Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
 
+
   // Your work here
   recombobulate();
   setPowerLevel(9500);
@@ -321,6 +322,13 @@ Exer.condition1 = function ( isSerious ) {
     if(isSerious === false){
 
       console.log("On second thoughts, let's not go to Camelot. It is a silly place.");
+
+    };
+  
+
+    if(isSerious === false){
+
+      console.log(" On second thoughts, let's not go to Camelot. It is a silly place.");
 
     };
   
