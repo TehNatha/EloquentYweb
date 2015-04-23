@@ -280,6 +280,7 @@ Exercises.compare6 = function () {
 Exercises.logic1 = function () {
 
   return 5 !== 5 ;
+
 };
 
 // Logical 2
