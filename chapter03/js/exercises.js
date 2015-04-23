@@ -72,9 +72,6 @@ Exer.parameters1 = function (){
 
  };  // end Exer.parameters1
 
-
-
-
 /*****************************    Parameters 2    *****************************/
 // Given spaceCubeDetector:
 // Run it once with a length of 3, width of 5, and height of 3.14159265359
@@ -93,8 +90,6 @@ console.log(spaceCubeDetector(1, 2, 3));
 
 
 };  // wrapper end
-
-
 
 //===============================    SCOPE    ================================//
 //  For Scope exercises 1-5, read through the following code and find the     //
@@ -152,7 +147,6 @@ Exer.scope4 = function() {
 Exer.scope5 = function() {
   return /* return value for Scope 5 */ 35;
 };
-
 
 /*******************************************************************************
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    Nested Scope    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -219,7 +213,7 @@ Exer.nestExample = function() {
   console.log(bar); // Nest 2: What value of bar is logged?
   console.log(quux); // Nest 3: What value of quux is logged?
 
-  nest(19);
+  nest(5318008);
 
   console.log(foo); // Nest 16: What value of foo is logged?
   console.log(bar); // Nest 17: What value of bar is logged?
@@ -290,23 +284,72 @@ Exer.nest18 = function() {
 *******************************************************************************/
 // Nate
 
-/*************************    Declaration Notation    *************************/
-// Annalise
+/*******************************************************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^    Declaration Notation    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+*******************************************************************************/
 
-/****************************    The Call Stack    ****************************/
+/****************************    DECLARATION 1    *****************************/
+// Use declaration notation to declare a function called `testNinja` that has no
+//     parameters
+// `testNinja` should log the string "You gotta believe!"
+// Return `testNinja` from `Exer.declaration1`
+//=================================//
+Exer.declaration1 = function () {  //
+//=================================//
+  function testNinja () {
+    console.log("You gotta believe!");
+    return testNinja;
+}
+
+
+//=============================//
+  Exer.testNinja = testNinja;  //
+};  //=========================//
+
+/****************************    DECLARATION 2    *****************************/
+// 1. Call a function called `trainNinja` with the argument "punch"
+//    Log what `trainNinja` returns
+// 2. Declare a function called `trainNinja` that takes one parameter called
+//        `move`
+//    `trainNinja` should return the correct string
+//=================================//
+Exer.declaration2 = function () {  //
+//=================================//
+  console.log(trainNinja("punch"));
+  function trainNinja (move){
+    return 'Kick, ' + move + ', block! It\'s all in the mind!';
+  }
+
+
+
+};  // wrapper end
+
+/*******************************************************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    The Call Stack    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*******************************************************************************/
 // Nate
 
-/**************************    Optional Arguments    **************************/
+/*******************************************************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^    Optional Arguments    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*******************************************************************************/
 // Annalise
 
-/*******************************    Closure    ********************************/
+/*******************************************************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    Closure    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*******************************************************************************/
 // Nate
 
-/******************************    Recursion    *******************************/
+/*******************************************************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    Recursion    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*******************************************************************************/
 // Annalise
 
-/**************************    Growing Functions    ***************************/
+/*******************************************************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^    Growing Functions    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*******************************************************************************/
 // Nate
 
-/**********************    Functions and Side Effects    **********************/
+/*******************************************************************************
+^^^^^^^^^^^^^^^^^^^^^^^    Functions and Side Effects    ^^^^^^^^^^^^^^^^^^^^^^^
+*******************************************************************************/
 // Annalise
