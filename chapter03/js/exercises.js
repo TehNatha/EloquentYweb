@@ -296,7 +296,10 @@ Exer.nest18 = function() {
 //=================================//
 Exer.declaration1 = function () {  //
 //=================================//
-
+  function testNinja () {
+    console.log("You gotta believe!");
+    return testNinja;
+}
 
 
 //=============================//
@@ -312,6 +315,10 @@ Exer.declaration1 = function () {  //
 //=================================//
 Exer.declaration2 = function () {  //
 //=================================//
+  console.log(trainNinja("punch"));
+  function trainNinja (move){
+    return 'Kick, ' + move + ', block! It\'s all in the mind!';
+  }
 
 
 
