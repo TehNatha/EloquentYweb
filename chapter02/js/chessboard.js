@@ -1,9 +1,12 @@
 // Student Workspace
-Chess.start = function () {
+Chess.start = function (n) {
 var output = "";
 var black = "#";
 var white = " ";
-var size = 8;
+if( n === 0){
+	return "";
+}
+var size = n || 8;
 
 for ( var m = 0; m < size; m++) {
 	for( var c = 0; c < size; c++){
